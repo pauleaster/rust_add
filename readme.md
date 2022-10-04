@@ -54,6 +54,7 @@ crate-type=["cdylib"]
 ```
 ### Modify the C++ header file to import the rust function
 Add the following lines so that the C++ compiler is aware of the external function.
+
 ```Cpp
 extern "C" {
 
