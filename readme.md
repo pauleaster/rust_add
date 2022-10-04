@@ -54,7 +54,7 @@ crate-type=["cdylib"]
 ```
 ### Modify the C++ header file to import the rust function
 Add the following lines so that the C++ compiler is aware of the external function.
-```C++
+```Cpp
 extern "C" {
 
     rust_add_API int8_t add(int8_t left, int8_t right);
