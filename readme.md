@@ -39,11 +39,14 @@ pub extern "C" fn add(left: i8, right: i8) -> i8 {
 First run:
 `cargo install cbindgen` in the rust project directory, and then run:
 `cbindgen . -o target/rust_add.h` to generate the initial header file.
+
 This header file will need to be copied across to the C++ project and modified (refer to `c_rust_call.cpp`).
 
 ### Modifying the header file and rust config file to generate a DLL
 Add the following to `rust_add.h` if you want to generate a dynamic library (DLL) windows.
+
 `#define rust_add_API __declspec(dllimport)`
+
 This needs to correspond to the following lines in `Config.toml` in the Rust project:
 ```rust
 [lib]
