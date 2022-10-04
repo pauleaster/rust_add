@@ -52,7 +52,7 @@ This needs to correspond to the following lines in `Config.toml` in the Rust pro
 [lib]
 crate-type=["cdylib"]
 ```
-###Modify the C++ header file to import the rust function
+### Modify the C++ header file to import the rust function
 Add the following lines so that the C++ compiler is aware of the external function.
 ```C++
 extern "C" {
