@@ -14,7 +14,9 @@ c_rust_call
             └───release
 ```
 The root C++ repo is stored here: [c_rust_call](http://aus-srv-dev2.lumen.com.au/paul.easter/c_rust_call) and the rust repo is stored as a git submodule here [rust_add](http://aus-srv-dev2.lumen.com.au/paul.easter/rust_add).
-After installing rust and creating a library with:
+
+After installing rust, create a library with:
+
 `cargo new rust_add --lib`
 
 This creates a rust library:
