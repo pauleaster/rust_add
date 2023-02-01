@@ -23,12 +23,12 @@ This creates a rust library:
 `src/lib.rs`
 which has been used, as is, with a few minor changes:
 
-`#[no_mangle] ` has been added to keep the correct function names
+`#[no_mangle]` has been added to keep the correct function names
 `pub extern "C"` has been added to the start of any external functions
 
 This is the entirety of the rust code, excluding the automatically generated unit test:
 ```rust
-#[no_mangle] 
+#[no_mangle]
 pub extern "C" fn add(left: i8, right: i8) -> i8 {
     println!("left = {}, right={}, left + right = {}",left, right,left + right);
     left + right
